@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/txtregistro"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="70dp"
+      android:text="@string/app_inicio"
+      android:textSize="30dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/TxtViewolvi"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/app_forgot"
+      android:textColor="@color/blue"
+      app:layout_constraintBottom_toTopOf="@+id/login"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.85"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Contra"
+      app:layout_constraintVertical_bias="0.060000002" />
+
+
+  <EditText
+      android:id="@+id/Usuario"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="135dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="@color/blue"
+      android:ems="10"
+      android:hint="@string/app_usuario"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtregistro" />
+
+  <EditText
+      android:id="@+id/Contra"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="@color/blue"
+      android:ems="10"
+      android:hint="@string/app_contraseña"
+      android:inputType="textPassword"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Usuario"
+      app:passwordToggleEnabled="true" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/usuario"
+      app:layout_constraintBottom_toBottomOf="@+id/Usuario"
+      app:layout_constraintEnd_toEndOf="@+id/Usuario"
+      app:layout_constraintHorizontal_bias="0.97"
+      app:layout_constraintStart_toStartOf="@+id/Usuario"
+      app:layout_constraintTop_toTopOf="@+id/Usuario" />
+
+  <TextView
+      android:id="@+id/iniciarcon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="120dp"
+      android:text="@string/app_iniciarcon"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:src="@drawable/bloquear"
+      app:layout_constraintBottom_toBottomOf="@+id/Contra"
+      app:layout_constraintEnd_toEndOf="@+id/Contra"
+      app:layout_constraintHorizontal_bias="0.98"
+      app:layout_constraintStart_toStartOf="@+id/Contra"
+      app:layout_constraintTop_toTopOf="@+id/Contra" />
+
+  <Button
+      android:id="@+id/login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="56dp"
+      android:backgroundTint="@color/blue1"
+      android:text="@string/app_login"
+      android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+      android:textSize="18dp"
+      app:cornerRadius="0dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Contra" />
+
+  <ImageButton
+      android:id="@+id/google"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="18dp"
+      android:background="#00FFFFFF"
+      android:scaleType="fitCenter"
+      android:src="@drawable/buscar"
+      app:layout_constraintEnd_toEndOf="@+id/iniciarcon"
+      app:layout_constraintTop_toBottomOf="@+id/iniciarcon" />
+
+  <ImageButton
+      android:id="@+id/facebook"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="18dp"
+      android:layout_marginEnd="32dp"
+      android:background="#00FFFFFF"
+      android:scaleType="fitCenter"
+      android:src="@drawable/facebook"
+      app:layout_constraintEnd_toStartOf="@+id/google"
+      app:layout_constraintStart_toStartOf="@+id/iniciarcon"
+      app:layout_constraintTop_toBottomOf="@+id/iniciarcon" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toTopOf="@+id/iniciarcon"
+      app:layout_constraintTop_toBottomOf="@+id/login"
+      tools:layout_editor_absoluteX="63dp">
+
+    <!-- Go to Sign In -->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Aun no tienes una cuenta?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btnrg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:text="@string/app_register"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+  </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenido de la actividad -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/BottomNavigation"            android:theme="?attr/actionBarTheme"
+            app:title="Preparacion"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <!-- Contenido desplazable -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Texto de título centrado -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparación"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:justificationMode="inter_word"
+                    />
+
+                <!-- CheckBox 1 -->
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lo primero, es empalar las salchichas frankfurt con los palos de brocheta. metemos la brocheta por uno de sus extremos, hasta llegar casi al extremo opuesto de la salchicha."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 2 -->
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparamos la tempura. En un bol ponemos la harina, el huevo, si queremos el pimentón que añadirán algo de sabor y de color, la cucharadita de sal, la levadura y la leche. La cantidad exacta de leche varía ya que, dependerá del tamaño del huevo que hayas utilizado y de la marca de harina ya que, no todas las marcas absorben la misma cantidad de líquido. Lo batimos bien con una varilla de mano. Que no queden grumos en la masa. La idea es que, una vez batido, la masa se pegue un poquito a la varilla pero, que caiga enseguida. Ese es el punto exacto que deseamos (una masa líquida pero, con bastante cuerpo)"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 3 -->
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ponemos la masa en un vaso alto u otro recipiente alto."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+
+                <!-- CheckBox 5 -->
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Ahora metemos las salchichas en el vaso y las impregnamos bien de la masa."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 6 -->
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Finalmente, retiramos el exceso de masa y las freímos. Esta masa es muy delicada así que, el fuego debe estar alto pero, tampoco demasiado o si no, se quemarían. Una vez fritas, las dejamos reposar sobre papel absorbente antes de comer."
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- TextView en la parte inferior izquierda -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/regresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regresar"
+                        android:textColor="@color/blue1"
+                        android:gravity="start"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_menu"
+        style="@style/BottomNavigation"
+        app:layout_constraintHorizontal_bias="0.5"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenido de la actividad -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/BottomNavigation"            android:theme="?attr/actionBarTheme"
+            app:title="Preparacion"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <!-- Contenido desplazable -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Texto de título centrado -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparación"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:justificationMode="inter_word"
+                    />
+
+                <!-- CheckBox 1 -->
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Para comenzar con nuestros tacos mexicanos, picamos los ajos y los cocinamos a fuego muy suave durante 1 minuto. Que no coja color"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 2 -->
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Añadimos el medio kilo de tomates, ya pelados y troceados y subimos la potencia del fuego. Salpimentamos y cocinamos durante un rato. El tomate soltará agua, debe evaporarse toda que, puede tartar un rato. Una vez evaporada dejamos cocinar a fuego suave mientras removemos constantemente, durante 5 minutos más, para que coja buen sabor"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 3 -->
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mientras se evapora el agua de los tomates, preparamos el pico de gallo. El pico de gallo es una salsa que le viene al pelo a los tacos mexicanos. En un bol echamos toda la verdura de esta salsa bien picada. Añadimos el zumo de 1/2 lima o de medio limón y removemos bien. Dejamos reposar"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 4 -->
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuando se haya cocinado un poco el tomate, añadimos la carne picada que hayamos elegido. Echamos su parte de sal y pimienta y cocinamos a fuego fuerte. Con una cuchara de madera, vamos removiendo todo y desmenuzando la carne picada, para que no que queden trozos grandes. De hecho, cuanto más finos queden mejor. Así que mezclamos con el tomate y el ajo, mientras la desmenuzamos y cocinamos la carne"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 5 -->
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Una vez se haya cocinado, ¡ya está lista! Calentamos una a una las tortillas por sus dos caras en una sartén a fuego medio. Después ponemos encima unas cucharadas de la carne, aderezamos con un poco de pico de gallo, las envolvemos dándole la forma característica de taco ¡Y ya está listo!. Opcionalmente puedes espolvorear también queso rallado por encima"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+
+                <!-- TextView en la parte inferior izquierda -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/regresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regresar"
+                        android:textColor="@color/blue1"
+                        android:gravity="start"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_menu"
+        style="@style/BottomNavigation"
+        app:layout_constraintHorizontal_bias="0.5"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenido de la actividad -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/BottomNavigation"
+            android:theme="?attr/actionBarTheme"
+            app:title="Preparacion"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="60dp">
+
+            <!-- Contenido desplazable -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Texto de título centrado -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparación"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:justificationMode="inter_word"
+                    />
+
+                <!-- CheckBox 1 -->
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Para preparar las arepas, ponemos el agua tibia en un cuenco y le añadimos una pizca de sal. Después añadimos la harina, poco a poco, hasta obtener una masa muy suave, que apenas se pegue a las manos pero, que tampoco quede seca. La trabajamos un poco y hacemos 4 bolas con ella. Cada bola pesará cerca de 250g. Dejamos reposar la masa, tapada, 10 minutos."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 2 -->
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Una vez dado el reposo, aplastamos cada bola con las manos hasta que tengan un diámetro aproximado de 10cm, y un grosor de 1,5cm. Las cocinamos por sus dos caras a la plancha, a fuego medio, de tal manera que se cocinen bien por fuera y por dentro."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 3 -->
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cocinamos también a la plancha las pechugas de pollo. Yo recomiendo cocinarlas enteras, para que después podamos desmechar la carne. Mientras se cocinan, y en otra sartén, con un chorrito de aceite, cocinar a fuego suave la cebolla bien picada."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 4 -->
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continuamos con la elaboración de nuestras arepas venezolanas rellenas de pollo y aguacate. Cuando las pechugas estén totalmente cocinadas, las pasamos a un bol. Con ayuda de dos tenedores, la desmechamos, es decir, que hacemos pequeñas tiritas con ellas, arrancando poco a poco trocitos de pechuga con los tenedores. Una vez hecho, añadimos la cebolla que, ya estará cocinada y blandita, el aguacate cortando en cubitos, unas cucharadas de mayonesa, un poco de cilantro picado y una pizca de sal y de pimienta negra. Mezclamos bien"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 5 -->
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Con las arepas ya cocinadas, las abrimos haciéndole un corte por la mitad, pero sin llegar hasta el final de la misma, para que sea más consistente a la hora de comer, y las rellenamos generosamente. Servir inmediatamente"
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- TextView en la parte inferior izquierda -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/regresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regresar"
+                        android:textColor="@color/blue1"
+                        android:gravity="start"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_menu"
+        style="@style/BottomNavigation"
+        app:layout_constraintHorizontal_bias="0.5"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

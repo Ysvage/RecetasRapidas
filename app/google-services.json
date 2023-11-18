@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "531405905468",
+    "project_id": "recetas-rapidas-222d4",
+    "storage_bucket": "recetas-rapidas-222d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531405905468:android:3fddb71091fd854e732d39",
+        "android_client_info": {
+          "package_name": "com.savage.recetasrapidas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8hAxIdHyG7B--VNztiqxnDWHRqkP9f6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

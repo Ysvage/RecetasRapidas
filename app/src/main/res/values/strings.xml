@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Recetas Rapidas</string>
+    <string name="app_inicio"><b>INICIAR SESION</b></string>
+    <string name="app_login"><b>Iniciar Sesión</b></string>
+    <string name="app_login2"><u>Iniciar Sesión</u></string>
+    <string name="app_register">Registrarse</string>
+    <string name="app_forgot"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="app_usuario">Usuario</string>
+    <string name="app_mail">Ingresa Tu Correo</string>
+    <string name="app_contraseña">Contraseña</string>
+    <string name="app_iniciarcon">Iniciar Sesión con</string>
+    <string name="app_forgottext"><b>OLVIDE MI CONTRASEÑA</b></string>
+
+    <string name="app_shoplist">Lista de compras</string>
+    <string name="app_home">Home</string>
+    <string name="app_account"><b>Cuenta</b></string>
+    <string name="app_notifications"><b>Notificaciones</b></string>
+
+    <string name="receta1">Pollo al horno con patatas y cebolla</string>
+    <string name="receta2">Banderillas de salchicha o corndogs</string>
+    <string name="receta3">Arepas venezolanas rellenas de pollo y aguacate</string>
+    <string name="receta4">Receta de tacos mexicanos</string>
+
+
+    <string name="app_file">com.savage.recetasrapidas.PREFERENCE_FILE_KEY</string>
+    <string name="default_web_client_id">com.savage.recetasrapidas.default_web_client_id</string>
+
+
+    <!-- Textos -->
+    <string name="large_text1">
+    La cocina es un arte que se nutre de tradiciones y sabores auténticos. En esta ocasión, te invitamos a explorar una receta sencilla y reconfortante que ha pasado de generación en generación: el pollo al horno con patatas y cebolla. Este plato, que combina ingredientes simples y técnicas tradicionales, es un homenaje a la cocina casera y a la calidez de un hogar lleno de aromas irresistibles. El secreto de esta preparación radica en la paciencia y el cuidado con el que cada elemento se combina en la bandeja del horno. El resultado es un festín de texturas y sabores que te transportará a la mesa de tu abuela, donde el tiempo se detenía y las comidas eran momentos compartidos y memorables. Así que, sin más preámbulos, sumérgete en esta receta de pollo y descubre cómo crear un plato que trae consigo la esencia de la cocina hogareña. ¡Comencemos!
+</string>
+
+    <string name="large_text2">
+    Las banderillas de salchicha o corndogs, es una receta típicamente estadounidense. Consiste en una salchicha frankfurt, pinchada con una brocheta y envuelta con una tempura de harina de trigo y maíz, huevo y leche. Finalmente se fríe. Es muy barata y fácil de hacer y como aperitivo le viene «al pelo». Estos corndogs, concretamente, no van a llevar harina de maíz. Y ésto, es para simplificar la receta. No obstante ya verás como quedan igualmente delicioso. Veamos ahora cómo hacer nuestras propias banderillas de salchicha en casa
+</string>
+
+    <string name="large_text3">
+    Arepas venezolanas rellenas de pollo y aguacate. Una receta de cocina internacional deliciosa. Las arepas son una especie de panecillo de maíz, típicas colombianas. Aunque también lo son de los países de Venezuela, Panamá y Perú. Dicho panecillo, una vez cocinado, se abre por la mitad y se rellena de los ingredientes más variopintos. Todos estos países tienen, no una si no, varias «recetas» de rellenos, todos con mucha personalidad y muy característicos. En este caso, vamos a poner un relleno venezonalo llamado «reina pepiada». Aunque en realidad puedes rellenarlas de lo que más te guste. Lo más importante es hacer bien el panecillo en sí cosa que, no es excesivamente difícil. Veamos como hacer unas arepas rellenas de pollo y aguacate
+</string>
+
+    <string name="large_text4">
+    Los tacos mexicanos son una popular receta de este país americano. Consiste en carne, generalmente de ternera (o res como lo llaman allí) o de pollo, cocinada junto a tomate y después introducida dentro de una tortilla de maíz o trigo. Finalmente se adereza con pico de gallo, una salsa típica del país. Un plato con mucha personalidad y que sin duda sabe a méxico. Aquí, lo haremos con carne picada aunque, en realidad se hace con trozos de carne cortadas en tiras, cocinada durante dos horas o más. Así que se puede decir que aunque se parezca, no es 100% mexicana. Pero para acelerar el proceso que, todos tenemos unas vidas muy ajetreadas ¡haremos una versión mucho más rápida e igualmente sabrosa!
+</string>
+
+</resources>

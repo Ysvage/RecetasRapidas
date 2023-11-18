@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- recetas pollo -->
+    <string name="ingrepollo1">1 pollo entero o 4 muslos completos (cuartos traseros)</string>
+    <string name="ingrepollo2">4 patatas medianas</string>
+    <string name="ingrepollo3">4 cebollas medianas</string>
+    <string name="ingrepollo4">aceite de oliva</string>
+    <string name="ingrepollo5">sal y pimienta</string>
+    <string name="ingrepollo6">Tomillo seco</string>
+
+
+    <!-- recetas banderillas-->
+
+    <string name="banderilla1">10 salchichas estilo frankfurt</string>
+    <string name="banderilla2">200g de harina de trigo normal</string>
+    <string name="banderilla3">1 huevo</string>
+    <string name="banderilla4">aproximadamente 1/2 vaso de leche. La cantidad exacta varía según la harina empleada</string>
+    <string name="banderilla5">1 cucharadita de sal</string>
+    <string name="banderilla6">Opcionalmente 1 cucharadita de pimentón dulce</string>
+    <string name="banderilla7">1 cucharada de levadura química o polvos para hornear</string>
+    <string name="banderilla8">Aceite para freírlas</string>
+
+    <!-- arepas-->
+
+    <string name="arepas1">400g de harina de maíz. Según las personas que me siguen en las redes sociales, la mejor marca para ello es la marca p.a.n (muy fácil de encontrar en España)</string>
+    <string name="arepas2">400ml de agua</string>
+    <string name="arepas3">2 pechugas de pollo</string>
+    <string name="arepas4">aproximadamente 1/2 vaso de leche. La cantidad exacta varía según la harina empleada</string>
+    <string name="arepas5">1 aguacate</string>
+    <string name="arepas6">1 cebolla</string>
+    <string name="arepas7">Unas cucharadas de mayonesa</string>
+    <string name="arepas8">Cilantro</string>
+    <string name="arepas9">sal y pimienta</string>
+    <string name="arepas10">Aceite de oliva</string>
+
+    <!-- tacos -->
+    <string name="tacos1">6 tortillas de trigo o de maíz</string>
+    <string name="tacos2">350g de carne picada de ternera o de pollo</string>
+    <string name="tacos3">4 dientes de ajo</string>
+    <string name="tacos4">500g de tomates</string>
+    <string name="tacos5">sal y pimienta</string>
+    <string name="tacos6">aceite</string>
+    <string name="tacos7">Opcionalmente puedes añadir algo de queso rallado a cada taco</string>
+
+
+    <string name="pasos"><u>Ir a la Preparacion</u></string>
+    <string name="regresar"><u>Regresar</u></string>
+
+
+
+</resources>

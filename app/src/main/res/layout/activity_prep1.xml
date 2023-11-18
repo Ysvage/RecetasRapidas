@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenido de la actividad -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/BottomNavigation"            android:theme="?attr/actionBarTheme"
+            app:title="Preparacion"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <!-- Contenido desplazable -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Texto de título centrado -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparación"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:justificationMode="inter_word"
+                    />
+
+                <!-- CheckBox 1 -->
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comienza precalentando tu horno a 220°C para asegurarte de que esté listo cuando lo necesites. Mientras tanto, lava y pela las patatas. Luego, córtalas en rodajas gruesas y resérvalas. También, pela las cebollas y córtalas en tiras finas. Salpimentamos."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 2 -->
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si has optado por un pollo entero, límpialo bien por dentro y por fuera, asegurándote de retirar cualquier exceso de grasa y plumas. Lava el pollo bajo agua fría y sécalo con papel de cocina. Si has elegido los muslos completos, simplemente asegúrate de que estén limpios y secos. Luego, sazona el pollo con sal, pimienta y una generosa pizca de tomillo seco. Este paso es esencial para que nuestro pollo al horno con patatas y cebolla adquiera un sabor increíble."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 3 -->
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En una bandeja de horno grande y resistente al calor, coloca una fina capa de aceite de oliva para evitar que los ingredientes se peguen. Luego, acomoda las rodajas de patata en el fondo de la bandeja, formando una capa uniforme. Encima de las patatas, coloca las rodajas de cebolla. Este lecho de patatas y cebolla añadirá sabor y jugosidad al pollo a medida que se cocine."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 4 -->
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coloca el pollo (o los muslos) encima de las patatas y cebolla en la bandeja del horno. Rocía el pollo con un poco de aceite de oliva adicional y sazona nuevamente con sal, pimienta y tomillo al gusto. Esto ayudará a que la piel se dore y se vuelva crujiente."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 5 -->
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metemos el pollo al horno con patatas y cebolla en el horno a 220ºC, si utilizas muslos. Calor arriba y abajo. Dejamos hornear unos 30 minutos, hasta que se dore bien. Si utilizas un pollo entero, horneamos a 190ºC."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 6 -->
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Cuando esté bien dorado, sacamos la bandeja del horno, le damos la vuelta a las piezas. Así, se cocinará el otro lado. Inmediatamente después, volvemos a meter la bandeja dentro del horno. Finalmente dejamos cocinar aproximadamente el mismo tiempo, hasta que todo quede bien cocinado."
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- CheckBox 7 -->
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Una vez que nuestro pollo al horno con patatas y cebolla esté listo, sácalo del horno y déjalo reposar durante unos minutos antes de cortarlo en porciones. Sirve el pollo al horno con las patatas y cebolla en la misma bandeja, aprovechando todos los jugos y sabores del asado."
+                    android:layout_marginBottom="8dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <!-- TextView en la parte inferior izquierda -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/regresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regresar"
+                        android:textColor="@color/blue1"
+                        android:gravity="start"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_menu"
+        style="@style/BottomNavigation"
+        app:layout_constraintHorizontal_bias="0.5"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
